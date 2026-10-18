@@ -261,6 +261,7 @@ _星数是累计的:项目停更了它也不会往下掉。下面这些被跟踪
 - [HeFu](https://www.hefu.hk) — 托管中转（`https://api.hefu.hk/v1`，在线），聚合十家厂商的 126+ 模型（OpenAI、Anthropic、Google、阿里、字节、DeepSeek、MiniMax、月之暗面…），提供 OpenAI 与 Anthropic 兼容端点，宣称**按官网原价、零加价**，并带成本/延迟/健康度打分的故障转移、团队子账号与逐笔充值 PDF 收据。**新且未经核实**（自荐;站点未披露任何运营主体，且按原价转售意味着没有可见毛利——这是"该去验保真度"的理由，而不是"该假定它有问题"的理由）——投产前请先用 [canary_check.py](scripts/canary_check.py) 核实。
 - [Standard Compute](https://standardcompute.com) — 固定月费订阅（$19–$2,499/月），背后是**公开且具名**的模型目录（[`/models`](https://standardcompute.com/models):Claude Fable 5.1、GPT-6 Astra、Gemini 3.1 Pro、GLM 5.3、Kimi K3、DeepSeek V4 Flash…），OpenAI 兼容并带 Anthropic Messages 端点（`api.stdcmpt.com/v1`，在线）。路由用哪些模型由你决定——最多选五个，或锁定单个模型让全部请求都走它。⚠️ 套餐价买到的是**每月算力预算，不是无限吞吐**:用完即停到下个计费周期，不超额计费——这一点是厂商自己的定价页与 FAQ 写明的，而[如何安全地选](#如何安全选型)里那类固定费率套餐通常正是隐瞒这一点。**新且未经核实**——运营方[自测 canary 通过](https://gist.github.com/henrikdukefoss/4f92ba7849a6378c834864be26794a2e)（锁定 `deepseek/deepseek-v4-pro`，以 OpenRouter 为参照，2026-09-09）;仍需第三方独立复现。
 - [Gonka Broker](https://gonkabroker.com) — 接入去中心化 Gonka GPU 网络的 OpenAI / Anthropic 兼容端点，**只提供开源权重模型**（[实时目录](https://proxy.gonkabroker.com/v1/models):MiniMax-M2.7、Kimi-K2.6、DeepSeek-V4-Flash，以及 BGE-M3 嵌入）。两点足够特殊、也正是值得一看的理由:**输入与输出同价**，且单价在**充值时锁定**、覆盖该笔余额全程，上游调价不会重新定价你已买的额度。刷卡支付，无需加密钱包。**新且未经核实**（自荐）——由于它自托管开源权重而非转售前沿模型额度，这里的保真度问题是**量化精度，而非模型替换**:请用 [canary_check.py](scripts/canary_check.py) 与同一权重的官方托管方做对比。
+- - [APIGOTO](https://www.china-aiapi.com) — 托管的 OpenAI 兼容网关（`https://api.china-aiapi.com/v1`），一个 Key 覆盖 GPT、Claude、Gemini、DeepSeek 等多个模型系列，按量计费、无订阅；同时提供 OpenAI Responses 和 Anthropic Messages 格式，支持托管用户自有厂商 Key（BYOK），并公开厂商状态页，展示各上游逐小时健康分和每日模型一致率。**新服务，尚未验证**（自荐；模型保真度尚未经过独立核实）——投产前请用 [canary_check.py](scripts/canary_check.py) 核实。
 
 </details>
 
@@ -692,6 +693,7 @@ _第一大信任问题，而全网没有一份中立的跨厂商答案。这里�
 | Gonka Broker | 性价比优先 | ⚠️ 未验证——用前自测 | 接入去中心化 Gonka GPU 网络的 OpenAI + Anthropic 端点，只提供开源权重（实时目录：MiniMax-M2.7、Kimi-K2.6、DeepSeek-V4-Flash、BGE-M3）。输入输出同价，单价充值时锁定。它自托管权重而非转售前沿额度，所以待验证的是量化精度而非模型替换。自荐；未经核实。 |
 | EidosStack AI Gateway | 性价比优先 | ⚠️ 未验证——运营方[自测 canary 通过](https://github.com/cuihuan/awesome-ai-gateway/issues/70)（`gpt-5.5` 对比 OpenAI 官方端点，平均相似度 1.0，2026-08-30）；仍需独立复现 | 托管中转，七家厂商 48+ 模型，价格表每 30 秒刷新。运营方自己的测试标出与参照端点存在 0.455 的 `prompt_tokens` 偏差——输出对得上、token 计数对不上，在把它的用量数字用于对账前值得留意。 |
 | SayGM | 性价比优先 | ⚠️ 未验证——用前自测 | 把请求路由经 Intel TDX 机密计算飞地并公开硬件证明，价格不高于各模型自身单价。这里有两个各自独立、都未经核实的主张：模型保真度，以及机密性保证——尚无人独立复现其证明校验。 |
+| [APIGOTO](https://www.china-aiapi.com) | 性价比优先 | ⚠️ 未验证——用前自测 | 托管 OpenAI 兼容网关，支持 BYOK，公开逐厂商健康分和模型一致率页面；`api.china-aiapi.com/v1/models` 存活（401）；自荐；模型保真度未经独立核实。 |
 
 *目前没有 ⛔ 确认有问题 的条目——该状态需要可复现的 canary 判定或有据可查的事故，绝不凭传闻。*
 
