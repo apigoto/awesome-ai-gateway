@@ -32,6 +32,7 @@ ROOT = Path(__file__).resolve().parent.parent
 # "as_of" field. The BENCHMARKS.md "Last reviewed" line mirrors models.json, so
 # guarding the canonical JSON covers it too.
 TRACKED = [
+    ("data/topup_terms.json (prepaid credit and subscription terms)", "data/topup_terms.json"),
     ("data/models.json (pricing & benchmark snapshot)", "data/models.json"),
     ("data/gateways_eval.json (gateway scorecard snapshot)", "data/gateways_eval.json"),
     ("data/free_tiers.json (verified free-tier / rate-limit table)", "data/free_tiers.json"),

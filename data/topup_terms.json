@@ -1,0 +1,80 @@
+{
+  "as_of": "2026-10-22",
+  "scope": "Public operator documentation only; not an independent billing test. Not stated means absent from the pages reviewed, not proof that no policy exists. A listing does not endorse a relay.",
+  "entries": [
+    {
+      "gateway": "OpenRouter",
+      "billing_model": "prepaid",
+      "minimum_topup": "Not stated on reviewed FAQ",
+      "topup_fee": "Credit-purchase fee applies; amount not extractable from reviewed FAQ",
+      "credit_expiry": "May expire after one year; contractual right, not a guaranteed grace period",
+      "refunds": "Unused credit: request within 24 hours; platform fees and crypto payments non-refundable",
+      "sources": [
+        "https://openrouter.ai/docs/faq"
+      ],
+      "checked_on": "2026-10-22"
+    },
+    {
+      "gateway": "Vercel AI Gateway",
+      "billing_model": "prepaid",
+      "minimum_topup": "Not stated on reviewed pricing page",
+      "topup_fee": "0% token markup",
+      "credit_expiry": "Purchased-credit expiry not stated on reviewed page; free monthly credit is separate",
+      "refunds": "Not stated on reviewed pricing page",
+      "sources": [
+        "https://vercel.com/docs/ai-gateway/pricing"
+      ],
+      "checked_on": "2026-10-22"
+    },
+    {
+      "gateway": "RouterPlex",
+      "billing_model": "prepaid",
+      "minimum_topup": "Card $5; crypto $15",
+      "topup_fee": "0% top-up fee (operator-stated)",
+      "credit_expiry": "PAYG credit never expires; optional plans impose separate spend windows",
+      "refunds": "Not stated on reviewed billing/pricing pages",
+      "sources": [
+        "https://routerplex.com/pricing.md",
+        "https://docs.routerplex.com/billing"
+      ],
+      "checked_on": "2026-10-22"
+    },
+    {
+      "gateway": "onomeo",
+      "billing_model": "prepaid",
+      "minimum_topup": "$5",
+      "topup_fee": "No separate top-up fee stated; payment amount becomes balance",
+      "credit_expiry": "Balance never expires; enhanced free-call quota lasts 35 days after payment",
+      "refunds": "Payments are not refunded",
+      "sources": [
+        "https://onomeo.com/pricing",
+        "https://onomeo.com/integrations#docs"
+      ],
+      "checked_on": "2026-10-22"
+    },
+    {
+      "gateway": "Standard Compute",
+      "billing_model": "subscription",
+      "minimum_topup": "N/A: plans from $19/month",
+      "topup_fee": "N/A: subscription, not a credit purchase",
+      "credit_expiry": "Monthly compute budget; requests stop at budget until renewal/upgrade; rollover not stated on reviewed page",
+      "refunds": "7-day fair refund: cancel and pay for usage",
+      "sources": [
+        "https://standardcompute.com/pricing"
+      ],
+      "checked_on": "2026-10-22"
+    },
+    {
+      "gateway": "INFRO",
+      "billing_model": "byok",
+      "minimum_topup": "N/A: providers bill the customer directly",
+      "topup_fee": "0% markup on model spend; software subscription separate",
+      "credit_expiry": "N/A at gateway; each provider sets its own credit terms",
+      "refunds": "Provider credit refunds follow provider terms; software refunds not reviewed",
+      "sources": [
+        "https://infro.io/llms.txt"
+      ],
+      "checked_on": "2026-10-22"
+    }
+  ]
+}

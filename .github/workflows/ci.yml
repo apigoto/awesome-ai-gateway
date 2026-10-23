@@ -19,6 +19,8 @@ jobs:
           python-version: '3.12'
       - name: Unit tests
         run: python -m unittest discover -s scripts -p 'test_*.py' -v
+      - name: Top-up terms match the sourced snapshot
+        run: python scripts/build_topup_table.py --check
       - name: Cost tables match data/models.json
         run: |
           python scripts/cost_calc.py

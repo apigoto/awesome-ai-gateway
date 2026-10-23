@@ -1,0 +1,54 @@
+{
+  "headers": [
+    "网关 / 计费方式",
+    "最低充值 / 起步费用",
+    "手续费",
+    "余额有效期 / 周期",
+    "退款",
+    "来源与核对日期"
+  ],
+  "entries": {
+    "OpenRouter": {
+      "billing_model": "预付费",
+      "minimum_topup": "所查 FAQ 未写明",
+      "topup_fee": "购买额度有手续费；所查 FAQ 无法提取具体费率",
+      "credit_expiry": "保留在购买一年后使未使用额度过期的权利；不是保证一年有效",
+      "refunds": "未使用余额须在 24 小时内申请退款；平台手续费与加密货币付款不退"
+    },
+    "Vercel AI Gateway": {
+      "billing_model": "预付费",
+      "minimum_topup": "所查定价页未写明",
+      "topup_fee": "token 零加价",
+      "credit_expiry": "所查页面未写明已购买额度的有效期；每月赠金另算",
+      "refunds": "所查定价页未写明"
+    },
+    "RouterPlex": {
+      "billing_model": "预付费",
+      "minimum_topup": "银行卡 $5；加密货币 $15",
+      "topup_fee": "充值零手续费（运营方所述）",
+      "credit_expiry": "按量余额不过期；可选套餐另有消费窗口",
+      "refunds": "所查计费 / 定价页未写明"
+    },
+    "onomeo": {
+      "billing_model": "预付费",
+      "minimum_topup": "$5",
+      "topup_fee": "未单列充值手续费；付款金额成为余额",
+      "credit_expiry": "余额不过期；付款后增强的免费调用额度仅持续 35 天",
+      "refunds": "付款不退款"
+    },
+    "Standard Compute": {
+      "billing_model": "订阅",
+      "minimum_topup": "不适用：套餐 $19/月起",
+      "topup_fee": "不适用：购买订阅而非充值",
+      "credit_expiry": "每月计算预算，用尽后等待续期 / 升级；所查页面未写明结转",
+      "refunds": "7 天内可取消，按已用量扣费后退款"
+    },
+    "INFRO": {
+      "billing_model": "自有密钥",
+      "minimum_topup": "不适用：厂商直接向客户收费",
+      "topup_fee": "模型用量零加价；另收软件订阅费",
+      "credit_expiry": "网关侧不适用；以各厂商的额度条款为准",
+      "refunds": "厂商余额退款依厂商条款；未审阅软件订阅退款条款"
+    }
+  }
+}

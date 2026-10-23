@@ -100,6 +100,13 @@
     "kittors/CliRelay",
     "caozhiyuan/copilot-api",
     "beizhu-1209/AIHelms",
-    "LianjiaTech/bella-openapi"
+    "LianjiaTech/bella-openapi",
+    "logicplanes/kaeso",
+    "maxceem/app-ai-gateway",
+    "vayungodara/cliproxy-rs",
+    "api7/aisix",
+    "yinxulai/osw",
+    "LeenHawk/gproxy",
+    "sandbaseai/cli"
   ]
 }

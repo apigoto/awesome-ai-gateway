@@ -28,6 +28,9 @@ python3 scripts/build_llms_txt.py
 echo "→ release feed (from data/releases.json)"
 python3 scripts/build_feed.py
 
+echo "→ sourced minimum top-up and credit-expiry tables"
+python3 scripts/build_topup_table.py
+
 echo "→ README table alignment + Contents (lint gate is blocking)"
 node scripts/format_tables.mjs README.md
 node scripts/build_toc.mjs README.md

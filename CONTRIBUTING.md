@@ -33,6 +33,8 @@ A project belongs on this list if **all** of these hold:
 5. Descriptions must be factual and neutral: what it does, language/license if notable,
    one differentiator. No superlatives from the project's own marketing.
 
+Maintainer acceptance and billing-data contracts: [curation policy](docs/curation-policy.md).
+
 ## PR checklist
 
 - [ ] Entry follows the format above, in alphabetical-by-relevance position
