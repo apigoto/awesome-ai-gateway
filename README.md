@@ -257,7 +257,7 @@ _Stars are cumulative; they never go down when a project stops shipping. Every t
 - [Glama Gateway](https://glama.ai/ai/gateway) - OpenAI-compatible gateway to 100+ models with consolidated billing, caching and logging (OSS core [glama-ai/lightport](https://github.com/glama-ai/lightport)).
 
 <details>
-<summary><b>New &amp; unverified relays (39)</b> — transparent resellers awaiting independent fidelity checks; read the <a href="#community-relay-watch-list">relay watch-list</a> first</summary>
+<summary><b>New &amp; unverified relays (40)</b> — transparent resellers awaiting independent fidelity checks; read the <a href="#community-relay-watch-list">relay watch-list</a> first</summary>
 
 - [Loop Gateway](https://api.loopxxi.com) - OpenAI-compatible proxy that meters every request in Bitcoin sats instead of dollars. 311 models via OpenRouter at a 15% markup. No accounts, no email, no card; top up over Lightning, get a bearer token. Three auth rails (prepaid bearer, L402, Cashu). Hosted at api.loopxxi.com. **New & unverified** (anonymous; its public GitHub repo has since been removed, so treat it as a closed hosted relay) — it resells frontier models _through the operator's own OpenRouter account_ at a 15% markup, and account-less + crypto-prepaid means no recourse if it swaps models or vanishes; confirm fidelity with [canary_check.py](scripts/canary_check.py) and only top up what you can afford to lose.
 - [nullsink](https://nullsink.is) ([repo](https://github.com/nullsink/nullsink)) - Account-less, metered proxy for frontier-model APIs, paid in Monero or Bitcoin. No accounts, no email, no card; mint a bearer token, prepay on-chain, and point the official SDKs at one base URL. ~10% markup taken once at top-up; no IP logging, no request logs; payment and token kept unlinkable. Self-hostable single binary (TypeScript/Bun, AGPL-3.0), live at nullsink.is. **New & unverified** (repo created 2026-06, <!--s:nullsink/nullsink-->⭐ 12<!--/s-->) — account-less + crypto-prepaid + no logs means no recourse if it swaps models or vanishes; confirm fidelity with canary_check.py and only top up what you can afford to lose.
@@ -298,6 +298,7 @@ _Stars are cumulative; they never go down when a project stops shipping. Every t
 - [Opper](https://opper.ai) - Hosted OpenAI-compatible gateway with per-route provider and residency metadata and an optional policy/observability control plane. Distinguish a model from its multiple provider routes; check the route-specific data policy. **New & unverified** (co-founder-submitted); EU hosting alone does not establish the residency of every inference route. ([Source](https://opper.ai), checked 2026-10-22).
 - [AICraft](https://aicraftapi.net) - Hosted OpenAI-compatible aggregation gateway with prepaid USD usage and an optional automatic model router; a named model can be selected directly. **New & unverified** (operator-submitted); routing, savings and model-fidelity claims have not been independently tested. ([Source](https://aicraftapi.net/docs), checked 2026-10-22).
 - [onomeo](https://onomeo.com) - Solo-operated hosted OpenAI-compatible gateway mixing quota-limited provider free tiers and paid models. Top-ups start at $5, never expire and do not renew automatically; longer free-model requests consume more calls. Public beta; provider-ToS/data-use policies and shared quota exhaustion need attention. **New & unverified** (operator-submitted). ([Source](https://onomeo.com/integrations#docs), checked 2026-10-22).
+- [Infere](https://infere.com) - Hosted OpenAI-compatible gateway with a prepaid balance, explicit model selection or token-configured automatic selection based on prompt complexity and routing mode, and Git-native prompt management. **New & unverified** (vendor-submitted); no independent model-fidelity, savings or budget-enforcement test here. ([Quickstart](https://infere.com/documentation/getting-started/), checked 2026-10-22).
 
 </details>
 
@@ -545,6 +546,7 @@ _Pain point: "Send each prompt to the cheapest model that can handle it."_
 - [Orq.ai](https://orq.ai) - Hosted routing control plane: 500+ models across 30+ providers with retries, fallbacks, caching and governance (BYOK).
 - [NadirClaw](https://github.com/NadirRouter/NadirClaw) <!--s:NadirRouter/NadirClaw-->⭐ 661<!--/s--> - Self-hosted, OpenAI-compatible router (Python) that sends simple prompts to cheap/local models and hard ones to premium, with a trained cascade verifier to cut API cost 40–70%.
 - [ngrok AI Gateway](https://ngrok.com/docs/ai-gateway/overview) - Managed proxy routing to OpenAI/Anthropic/Google + local Ollama/vLLM/LM Studio, with automatic failover, key rotation, and CEL traffic-policy controls (PII redaction).
+- [Infere](https://infere.com/documentation/getting-started/) - Hosted prompt-complexity routing with balanced, cost-optimized and quality-optimized modes; prepaid operator submission, **unverified** (source reviewed 2026-10-22).
 
 ### 💾 Prompt caching through a gateway — the money question
 
@@ -792,6 +794,7 @@ _Nothing is ⛔ confirmed-problematic yet — that status needs a reproducible c
 | Opper | Cost-first | ⚠️ Unverified — vet before use | Self-submitted hosted relay; public documentation reviewed 2026-10-22. Listing does not establish model identity, billing correctness or privacy behavior. |
 | AICraft | Cost-first | ⚠️ Unverified — vet before use | Self-submitted hosted relay; public documentation reviewed 2026-10-22. Listing does not establish model identity, billing correctness or privacy behavior. |
 | onomeo | Cost-first | ⚠️ Unverified — vet before use | Self-submitted hosted relay; public documentation reviewed 2026-10-22. Listing does not establish model identity, billing correctness or privacy behavior. |
+| Infere | Cost-first / Smart routing | ⚠️ Unverified — vet before use | Vendor-submitted prepaid routing gateway; public quickstart inspected 2026-10-22. Runtime fidelity, budget enforcement and savings not independently checked. |
 
 ## 📊 Latest evaluations
 

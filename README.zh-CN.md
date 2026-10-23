@@ -236,7 +236,7 @@ _星数是累计的:项目停更了它也不会往下掉。下面这些被跟踪
 - [Glama Gateway](https://glama.ai/ai/gateway) — OpenAI 兼容网关，接入 100+ 模型，统一账单、缓存与日志（开源内核 [glama-ai/lightport](https://github.com/glama-ai/lightport)）。
 
 <details>
-<summary><b>新且未经核实的中转（39 家）</b>——等待独立保真度验证的透明转售；先读<a href="#社区中转避雷观察名单">中转避雷观察名单</a></summary>
+<summary><b>新且未经核实的中转（40 家）</b>——等待独立保真度验证的透明转售；先读<a href="#社区中转避雷观察名单">中转避雷观察名单</a></summary>
 
 - [Loop Gateway](https://api.loopxxi.com) — OpenAI 兼容代理，每个请求以比特币 sats（而非美元）计费。经 OpenRouter 接入 311 个模型、加价 15%。无需账号/邮箱/银行卡；用闪电网络充值即得 bearer token。三种鉴权（预付 bearer、L402、Cashu）。线上托管于 [api.loopxxi.com](https://api.loopxxi.com)。 **新且未经核实**（匿名；其公开 GitHub 仓库现已删除，按闭源托管中转看待）——它*通过运营者自己的 OpenRouter 账号*转售前沿模型并加价 15%，无账号+加密货币预付意味着一旦偷换模型或跑路都无从追索；投产前请用 [canary_check.py](scripts/canary_check.py) 验证保真度，且只充值你能承受损失的金额。
 - [nullsink](https://nullsink.is) ([仓库](https://github.com/nullsink/nullsink)) — 无账号的前沿模型 API 计费代理，用门罗币（Monero）或比特币（Bitcoin）付费。无需账号/邮箱/银行卡；生成 bearer token、链上预付，改一个 base URL 即可用官方 SDK 调用。加价约 10%，仅在充值时收取一次；不记录 IP、不记录请求日志；付款与 token 不可关联。单文件可执行、可自托管（TypeScript/Bun，AGPL-3.0），线上服务 [nullsink.is](https://nullsink.is)。 **新且未经核实**（仓库 2026-06 新建、<!--s:nullsink/nullsink-->⭐ 12<!--/s-->）——无账号+加密货币预付+无日志，一旦偷换模型或跑路都无从追索；投产前请用 [canary_check.py](scripts/canary_check.py) 验证保真度，且只充值你能承受损失的金额。
@@ -277,6 +277,7 @@ _星数是累计的:项目停更了它也不会往下掉。下面这些被跟踪
 - [Opper](https://opper.ai) — 托管 OpenAI 兼容网关，公开逐路由的供应商与地域元数据，可选策略 / 可观测控制面。需区分模型与同一模型的多条供应商路由，并检查逐路由数据政策。**新且未经核实**（联合创始人提交）；网关部署欧洲不等于每条推理路由都在欧洲。（[来源](https://opper.ai)，核对于 2026-10-22）。
 - [AICraft](https://aicraftapi.net) — 托管 OpenAI 兼容聚合网关，以预付美元余额按量计费，可选自动模型路由，也可直接指定模型名。**新且未经核实**（运营方提交），路由、节省费用与模型保真度尚未独立测试。（[来源](https://aicraftapi.net/docs)，核对于 2026-10-22）。
 - [onomeo](https://onomeo.com) — 单人运营的托管 OpenAI 兼容网关，结合有调用限额的厂商免费层与付费模型。最低充值 $5，余额不过期、不自动续费，较长的免费模型请求消耗更多调用次数。公开测试中，需注意上游服务条款、数据使用政策及共享额度耗尽。**新且未经核实**（运营方提交）。（[来源](https://onomeo.com/integrations#docs)，核对于 2026-10-22）。
+- [Infere](https://infere.com) — 托管 OpenAI 兼容网关，使用预付余额，可明确指定模型，也可按 Token 配置、Prompt 复杂度与路由模式自动选择，支持 Git 原生 Prompt 管理。**新且未经核实**（厂商提交），本清单未独立验证模型保真度、节省费用或预算执行。（[入门文档](https://infere.com/documentation/getting-started/)，核对于 2026-10-22）。
 
 </details>
 
@@ -522,6 +523,7 @@ _生态里被问得最多的问题之一，而网上的答案大多已过期。�
 - [Orq.ai](https://orq.ai) — 托管路由控制面：30+ 厂商 500+ 模型，带重试、兜底、缓存与治理（BYOK）。
 - [NadirClaw](https://github.com/NadirRouter/NadirClaw) <!--s:NadirRouter/NadirClaw-->⭐ 661<!--/s--> — 自托管、OpenAI 兼容的路由器（Python）：简单 prompt 走便宜/本地模型、复杂的走高端，配训练过的级联校验器，省 40–70% API 成本。
 - [ngrok AI Gateway](https://ngrok.com/docs/ai-gateway/overview) — 托管代理，路由到 OpenAI/Anthropic/Google 及本地 Ollama/vLLM/LM Studio，带自动兜底、密钥轮换与 CEL 流量策略（PII 脱敏）。
+- [Infere](https://infere.com/documentation/getting-started/) — 托管的 Prompt 复杂度路由，可选平衡、成本优先或质量优先模式；预付费，运营方提交，**未经核实**（来源核对于 2026-10-22）。
 
 ### 💾 缓存过网关——钱的问题
 
@@ -769,6 +771,7 @@ _第一大信任问题，而全网没有一份中立的跨厂商答案。这里�
 | Opper | 性价比优先 | ⚠️ 未验证——用前自测 | 自荐托管中转，2026-10-22 核对公开文档；收录不代表已验证模型身份、计费正确性或隐私行为。 |
 | AICraft | 性价比优先 | ⚠️ 未验证——用前自测 | 自荐托管中转，2026-10-22 核对公开文档；收录不代表已验证模型身份、计费正确性或隐私行为。 |
 | onomeo | 性价比优先 | ⚠️ 未验证——用前自测 | 自荐托管中转，2026-10-22 核对公开文档；收录不代表已验证模型身份、计费正确性或隐私行为。 |
+| Infere | 性价比优先 / 智能路由 | ⚠️ 未验证——用前自测 | 厂商提交的预付费路由网关，2026-10-22 读取公开入门文档；运行时保真度、预算执行与节省费用未经独立验证。 |
 
 ## 📊 评测速递
 
