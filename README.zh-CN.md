@@ -120,7 +120,7 @@ _这清单是被账单逼出来的：**我一天在 AI 写代码上烧了 $788**
 | OpenRouter                                                              | **Stripe 已达成收购协议**（8 月 19 日宣布）；条款未披露，媒体报道 >70 亿美元     | 已签协议、交割未获独立确认——OpenRouter 承诺产品与 API 不变            |
 | BricksLLM、Glide                                                         | 2025-01 / 2024-08 起无提交           | 从未归档;失败形态是沉默              |
 
-但这不是崩塌——同一年，LiteLLM <!--s:BerriAI/litellm-->⭐ 61.8k<!--/s--> 继续复利增长，Bifrost <!--s:maximhq/bifrost-->⭐ 9k<!--/s--> 靠实测开销取胜，Envoy AI Gateway 于 6/23 发布 v1.0 成为首个 CNCF 背书的生产级稳定选项，而编码 Agent 档与 token 压缩代理成了本清单里增长最快的品类。
+但这不是崩塌——同一年，LiteLLM <!--s:BerriAI/litellm-->⭐ 61.9k<!--/s--> 继续复利增长，Bifrost <!--s:maximhq/bifrost-->⭐ 9k<!--/s--> 靠实测开销取胜，Envoy AI Gateway 于 6/23 发布 v1.0 成为首个 CNCF 背书的生产级稳定选项，而编码 Agent 档与 token 压缩代理成了本清单里增长最快的品类。
 
 **这改变了你的三件事:** 先看最后提交日期再看功能矩阵;优先选你能留住的代码而不是留不住的控制面;如果你的流量本来就在某一朵云上，那朵云的原生网关现在是真答案。
 
@@ -162,22 +162,22 @@ _清单告诉你**选哪个**网关；这几章教你**它们如何工作、为�
 <!-- TOP-GATEWAYS:START -->
 | 网关                                                                     | Star                                                 | 是什么                                  | 跳转                            |
 | ---------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------ | ----------------------------- |
-| [OmniRoute](https://github.com/diegosouzapw/OmniRoute) ⚠️              | <!--s:diegosouzapw/OmniRoute-->⭐ 79.6k<!--/s-->      | 编码 Agent 省 token，231+ 家上游            | [自托管](#-自托管开源)                |
-| [headroom](https://github.com/headroomlabs-ai/headroom)                | <!--s:headroomlabs-ai/headroom-->⭐ 77.4k<!--/s-->      | 上下文压缩代理，不是路由——每次调用少发 token           | [自托管](#-自托管开源)                |
-| [LiteLLM](https://github.com/BerriAI/litellm)                          | <!--s:BerriAI/litellm-->⭐ 61.8k<!--/s-->             | 事实标准的开源代理 + SDK，OpenAI 格式接 100+ 家    | [自托管](#-自托管开源)                |
-| [CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) ⚠️         | <!--s:router-for-me/CLIProxyAPI-->⭐ 55.9k<!--/s-->   | 把编码 CLI 订阅（Claude Code、Codex…）包成 API | [自托管](#-自托管开源)                |
+| [OmniRoute](https://github.com/diegosouzapw/OmniRoute) ⚠️              | <!--s:diegosouzapw/OmniRoute-->⭐ 80k<!--/s-->      | 编码 Agent 省 token，231+ 家上游            | [自托管](#-自托管开源)                |
+| [headroom](https://github.com/headroomlabs-ai/headroom)                | <!--s:headroomlabs-ai/headroom-->⭐ 77.6k<!--/s-->      | 上下文压缩代理，不是路由——每次调用少发 token           | [自托管](#-自托管开源)                |
+| [LiteLLM](https://github.com/BerriAI/litellm)                          | <!--s:BerriAI/litellm-->⭐ 61.9k<!--/s-->             | 事实标准的开源代理 + SDK，OpenAI 格式接 100+ 家    | [自托管](#-自托管开源)                |
+| [CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) ⚠️         | <!--s:router-for-me/CLIProxyAPI-->⭐ 56k<!--/s-->   | 把编码 CLI 订阅（Claude Code、Codex…）包成 API | [自托管](#-自托管开源)                |
 | [new-api](https://github.com/QuantumNous/new-api)                      | <!--s:QuantumNous/new-api-->⭐ 50.5k<!--/s-->         | 最活跃的中转/计费面板                          | [国内](#-国内生态)                  |
-| [sub2api](https://github.com/Wei-Shaw/sub2api) ⚠️                      | <!--s:Wei-Shaw/sub2api-->⭐ 44.6k<!--/s-->            | 把订阅账号拼车池化到一个端点                       | [国内](#-国内生态)                  |
+| [sub2api](https://github.com/Wei-Shaw/sub2api) ⚠️                      | <!--s:Wei-Shaw/sub2api-->⭐ 44.7k<!--/s-->            | 把订阅账号拼车池化到一个端点                       | [国内](#-国内生态)                  |
 | [Kong](https://github.com/Kong/kong)                                   | <!--s:Kong/kong-->⭐ 44.3k<!--/s-->                   | 成熟 API 网关 + AI 插件（语义缓存、护栏）           | [企业](#-企业合规)                  |
-| [freellmapi](https://github.com/tashfeenahmed/freellmapi) ⚠️           | <!--s:tashfeenahmed/freellmapi-->⭐ 39.1k<!--/s-->    | 把 28 家的免费额度叠在一个端点后面                  | [性价比优先](#-性价比优先)              |
+| [freellmapi](https://github.com/tashfeenahmed/freellmapi) ⚠️           | <!--s:tashfeenahmed/freellmapi-->⭐ 39.8k<!--/s-->    | 把 28 家的免费额度叠在一个端点后面                  | [性价比优先](#-性价比优先)              |
 | [Claude Code Router](https://github.com/musistudio/claude-code-router) | <!--s:musistudio/claude-code-router-->⭐ 37.8k<!--/s--> | 把 Claude Code 及各 Agent CLI 路由到任意模型   | [智能路由](#-智能路由与模型选择)           |
 | [one-api](https://github.com/songquanpeng/one-api)                     | <!--s:songquanpeng/one-api-->⭐ 37.2k<!--/s-->        | 最早的 LLM API 管理/分发系统                  | [国内](#-国内生态)                  |
-| [9router](https://github.com/decolua/9router) ⚠️                       | <!--s:decolua/9router-->⭐ 31.2k<!--/s-->             | BYOK 本地代理，订阅→便宜→免费兜底                 | [自托管](#-自托管开源)                |
+| [9router](https://github.com/decolua/9router) ⚠️                       | <!--s:decolua/9router-->⭐ 31.3k<!--/s-->             | BYOK 本地代理，订阅→便宜→免费兜底                 | [自托管](#-自托管开源)                |
 | [MLflow AI Gateway](https://github.com/mlflow/mlflow)                  | <!--s:mlflow/mlflow-->⭐ 28.5k<!--/s-->               | MLflow 平台内的统一端点 + 治理                 | [可观测](#-可观测与成本核算)             |
 | [opencodex](https://github.com/lidge-jun/opencodex)                    | <!--s:lidge-jun/opencodex-->⭐ 17.8k<!--/s-->         | 把 Codex 的 Responses API 转译到任意厂商      | [智能路由](#-智能路由与模型选择)           |
 | [Apache APISIX](https://github.com/apache/apisix)                      | <!--s:apache/apisix-->⭐ 17.2k<!--/s-->               | 云原生 API + AI 网关（ai-proxy 插件）         | [企业](#-企业合规)                  |
 | [aisuite](https://github.com/andrewyng/aisuite)                        | <!--s:andrewyng/aisuite-->⭐ 16.4k<!--/s-->           | 吴恩达的统一多厂商客户端（是个库）                    | [自托管](#-自托管开源)                |
-| [Portkey Gateway](https://github.com/Portkey-AI/gateway)               | <!--s:Portkey-AI/gateway-->⭐ 13.2k<!--/s-->          | 高性能 TypeScript 网关，1600+ 模型、50+ 护栏    | [自托管](#-自托管开源)                |
+| [Portkey Gateway](https://github.com/Portkey-AI/gateway)               | <!--s:Portkey-AI/gateway-->⭐ 13.3k<!--/s-->          | 高性能 TypeScript 网关，1600+ 模型、50+ 护栏    | [自托管](#-自托管开源)                |
 | [Higress](https://github.com/higress-group/higress)                    | <!--s:higress-group/higress-->⭐ 9.6k<!--/s-->        | 阿里的 AI 原生网关，基于 Envoy/Istio           | [国内](#-国内生态)                  |
 | [Chat Nio (CoAI)](https://github.com/coaidev/coai)                     | <!--s:coaidev/coai-->⭐ 9.3k<!--/s-->                 | 多租户网关，自带额度/订阅计费面板                    | [自托管](#-自托管开源)                |
 | [Bifrost](https://github.com/maximhq/bifrost)                          | <!--s:maximhq/bifrost-->⭐ 9k<!--/s-->              | Go 网关，实测开销最低                         | [自托管](#-自托管开源)                |
@@ -229,7 +229,7 @@ _星数是累计的:项目停更了它也不会往下掉。下面这些被跟踪
 - [Eden AI](https://www.edenai.co) — 统一 API 接入 500+ 模型及视觉/OCR/语音；欧盟公司，平台费约 5.5%。
 - [Helicone AI Gateway（云版）](https://www.helicone.ai) — **0 加价**直通计费，可观测能力打包赠送。
 - [GPT-Load](https://github.com/tbphp/gpt-load) <!--s:tbphp/gpt-load-->⭐ 7.2k<!--/s--> — Go 写的高性能多渠道密钥轮询代理，把每把 Key 的额度榨干。
-- [freellmapi](https://github.com/tashfeenahmed/freellmapi) <!--s:tashfeenahmed/freellmapi-->⭐ 39.1k<!--/s--> — OpenAI 兼容代理（MIT），把 28 家厂商的免费额度叠加在一个 `/v1` 端点之后——智能路由、自动故障转移、按 Key 额度追踪、密钥加密存储。⚠️ 把各家免费额度池化到一个端点可能触碰厂商 ToS / 封号风险——仓库自己就标注"仅供个人实验"——运营方另售付费实时模型目录订阅（$19/年；路由器本体始终 MIT、自托管、用自己的 Key）。
+- [freellmapi](https://github.com/tashfeenahmed/freellmapi) <!--s:tashfeenahmed/freellmapi-->⭐ 39.8k<!--/s--> — OpenAI 兼容代理（MIT），把 28 家厂商的免费额度叠加在一个 `/v1` 端点之后——智能路由、自动故障转移、按 Key 额度追踪、密钥加密存储。⚠️ 把各家免费额度池化到一个端点可能触碰厂商 ToS / 封号风险——仓库自己就标注"仅供个人实验"——运营方另售付费实时模型目录订阅（$19/年；路由器本体始终 MIT、自托管、用自己的 Key）。
 - [freelm](https://github.com/shihabshahrier/freelm) <!--s:shihabshahrier/freelm-->⭐ 9<!--/s--> — MIT 开源路由器，可作为 Python / TypeScript 库嵌入进程内，也可用 `freelm serve` 作为本地 OpenAI 兼容端点运行：用你自己的 Key 汇聚 Gemini、Groq、OpenRouter、Cloudflare Workers AI 等官方免费额度，按模型追踪配额，并在某家厂商变慢时并行请求下一家、先返回者胜出。 ⚠️ 聚合厂商免费额度存在服务条款与额度耗尽风险。（来源核对于 2026-10-22）。
 - [AIMLAPI](https://aimlapi.com) — 一个 OpenAI/Anthropic 兼容端点打通 400+ 模型（对话/图像/视频/音频/向量）；预付费，OpenRouter 式聚合器。
 - [Novita AI](https://novita.ai) — 统一 API 接入 200+ 开源模型（DeepSeek/Qwen/Llama…），自带负载均衡、弹性扩缩与故障转移；另有 GPU 云。
@@ -323,17 +323,17 @@ _生态里被问得最多的问题之一，而网上的答案大多已过期。�
 
 *痛点："Key 在我手里、跑在我机器上，不交按量过路费。"*
 
-- [LiteLLM](https://github.com/BerriAI/litellm) <!--s:BerriAI/litellm-->⭐ 61.8k<!--/s--> — 默认之选：Python SDK + 代理服务，以 OpenAI 格式打通 100+ 厂商（含本地 Ollama），带虚拟 Key、预算、负载均衡与护栏；管理界面/虚拟 Key 需要 Postgres 数据库。
-- [Portkey Gateway](https://github.com/Portkey-AI/gateway) <!--s:Portkey-AI/gateway-->⭐ 13.2k<!--/s--> — 高速 TypeScript 网关（1600+ 模型、50+ 护栏），同时是 Portkey 商业 LLMOps 平台的底座。
-- [CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) <!--s:router-for-me/CLIProxyAPI-->⭐ 55.9k<!--/s--> — Go 网关，把各家编码 Agent 的 CLI 订阅（Claude Code、Codex、Gemini、Grok、Antigravity）包装成 OpenAI/Gemini/Claude/Codex 兼容 API，带多账号池、轮询负载均衡与管理 API；本领域星数最高的开源网关之一。自带账号——但把 OAuth 编码订阅档通过 API 转发可能违反厂商 ToS，需权衡封号风险。配套工具：[CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus) <!--s:seakee/CPA-Manager-Plus-->⭐ 3.9k<!--/s--> — 它的自托管管理面板 + 可观测仪表盘（请求、用量、成本、额度、失败、账号健康）；同样适用上述 ToS 注意事项。
-- [9router](https://github.com/decolua/9router) <!--s:decolua/9router-->⭐ 31.2k<!--/s--> — MIT 自托管 BYOK 本地代理，在 40+ 厂商间按「订阅→便宜→免费」自动回退路由，带多账号负载均衡与 token 压缩；性价比优先、非常热门。两条提醒，安全那条更重要：**已公布 19 条安全公告——6 条 critical、11 条 high，其中 12 条集中在 2026 年 7 月**，问题类型集中在「未认证即可访问代理及其持有的厂商密钥」，且**有 3 条未登记修复版本、其中 2 条是 critical**（详见下方供应链矩阵）。要用就跑在你自己可控的网络里，并锁定到最新版本。另外，它把免费/OAuth 编码档路由（Claude Code、Codex、Kiro）接进来，仍有厂商 ToS/封号风险。
-- [OmniRoute](https://github.com/diegosouzapw/OmniRoute) <!--s:diegosouzapw/OmniRoute-->⭐ 79.6k<!--/s--> — MIT 自托管 TypeScript 网关：一个端点接入 231+ 厂商（50+ 免费），把 Claude Code / Codex / Cursor / Cline / Copilot 接到免费的 Claude/GPT/Gemini，叠加 token 压缩（省 15–95%）、17 种路由策略、智能自动回退与 MCP/A2A。2026 编码 Agent「省 token」浪潮的黑马——是真实代码（非中转农场），但其免费/OAuth 编码档路由存在厂商 ToS/封号风险。
+- [LiteLLM](https://github.com/BerriAI/litellm) <!--s:BerriAI/litellm-->⭐ 61.9k<!--/s--> — 默认之选：Python SDK + 代理服务，以 OpenAI 格式打通 100+ 厂商（含本地 Ollama），带虚拟 Key、预算、负载均衡与护栏；管理界面/虚拟 Key 需要 Postgres 数据库。
+- [Portkey Gateway](https://github.com/Portkey-AI/gateway) <!--s:Portkey-AI/gateway-->⭐ 13.3k<!--/s--> — 高速 TypeScript 网关（1600+ 模型、50+ 护栏），同时是 Portkey 商业 LLMOps 平台的底座。
+- [CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) <!--s:router-for-me/CLIProxyAPI-->⭐ 56k<!--/s--> — Go 网关，把各家编码 Agent 的 CLI 订阅（Claude Code、Codex、Gemini、Grok、Antigravity）包装成 OpenAI/Gemini/Claude/Codex 兼容 API，带多账号池、轮询负载均衡与管理 API；本领域星数最高的开源网关之一。自带账号——但把 OAuth 编码订阅档通过 API 转发可能违反厂商 ToS，需权衡封号风险。配套工具：[CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus) <!--s:seakee/CPA-Manager-Plus-->⭐ 3.9k<!--/s--> — 它的自托管管理面板 + 可观测仪表盘（请求、用量、成本、额度、失败、账号健康）；同样适用上述 ToS 注意事项。
+- [9router](https://github.com/decolua/9router) <!--s:decolua/9router-->⭐ 31.3k<!--/s--> — MIT 自托管 BYOK 本地代理，在 40+ 厂商间按「订阅→便宜→免费」自动回退路由，带多账号负载均衡与 token 压缩；性价比优先、非常热门。两条提醒，安全那条更重要：**已公布 19 条安全公告——6 条 critical、11 条 high，其中 12 条集中在 2026 年 7 月**，问题类型集中在「未认证即可访问代理及其持有的厂商密钥」，且**有 3 条未登记修复版本、其中 2 条是 critical**（详见下方供应链矩阵）。要用就跑在你自己可控的网络里，并锁定到最新版本。另外，它把免费/OAuth 编码档路由（Claude Code、Codex、Kiro）接进来，仍有厂商 ToS/封号风险。
+- [OmniRoute](https://github.com/diegosouzapw/OmniRoute) <!--s:diegosouzapw/OmniRoute-->⭐ 80k<!--/s--> — MIT 自托管 TypeScript 网关：一个端点接入 231+ 厂商（50+ 免费），把 Claude Code / Codex / Cursor / Cline / Copilot 接到免费的 Claude/GPT/Gemini，叠加 token 压缩（省 15–95%）、17 种路由策略、智能自动回退与 MCP/A2A。2026 编码 Agent「省 token」浪潮的黑马——是真实代码（非中转农场），但其免费/OAuth 编码档路由存在厂商 ToS/封号风险。
 - [Chat Nio (CoAI)](https://github.com/coaidev/coai) <!--s:coaidev/coai-->⭐ 9.3k<!--/s--> — 多租户「一站式」网关，内置管理后台 + 积分/订阅计费面板，聚合 200+ 模型 / 35+ 厂商，带优先级负载均衡与模型缓存——与本清单已收录的 new-api / one-api / VoAPI 属同一商业面板品类。
 - [TensorZero](https://github.com/tensorzero/tensorzero) <!--s:tensorzero/tensorzero-->⭐ 11.7k<!--/s--> — ⚠️ **2026 年 6 月已归档**（公司关停；仓库只读，Apache-2.0 代码与社区分支尚存）。Rust 网关 + 可观测 + 评测 + 实验优化一体。
 - [Bifrost](https://github.com/maximhq/bifrost) <!--s:maximhq/bifrost-->⭐ 9k<!--/s--> — Maxim AI 出品的 Go 网关，号称比 LiteLLM 快约 50 倍；自适应负载均衡、集群模式、支持 MCP，内置 Web 管理界面，官方文档支持本地 Ollama——`npx` 或 Docker 零配置起步。
-- [Otari](https://github.com/mozilla-ai/otari) <!--s:mozilla-ai/otari-->⭐ 719<!--/s--> — **Mozilla AI** 出品的自托管网关（Apache-2.0，Python）：一个端点同时兼容 OpenAI 与 Anthropic 协议，经 [any-llm](https://github.com/mozilla-ai/any-llm) 覆盖 40+ 厂商；虚拟 Key、按用户/按 Key 的预算在请求执行**前**拦截、`/v1/usage` 消费查询；单 Docker 起步，可选托管平台（otari.ai）。2026 年 4 月发布，7 月增速最快的新网关之一。
-- [Traceloop Hub](https://github.com/traceloop/hub) <!--s:traceloop/hub-->⭐ 232<!--/s--> — [Traceloop](https://www.traceloop.com/) 团队（OpenLLMetry / LLM 版 OTel）出品的 Rust 高并发网关，内置 OpenTelemetry 原生可观测性。
-- [Helicone](https://github.com/Helicone/helicone) <!--s:Helicone/helicone-->⭐ 6.2k<!--/s--> — 可观测优先的平台（YC W23），配套 Rust [ai-gateway](https://github.com/Helicone/ai-gateway) <!--s:Helicone/ai-gateway-->⭐ 639<!--/s-->。
+- [Otari](https://github.com/mozilla-ai/otari) <!--s:mozilla-ai/otari-->⭐ 729<!--/s--> — **Mozilla AI** 出品的自托管网关（Apache-2.0，Python）：一个端点同时兼容 OpenAI 与 Anthropic 协议，经 [any-llm](https://github.com/mozilla-ai/any-llm) 覆盖 40+ 厂商；虚拟 Key、按用户/按 Key 的预算在请求执行**前**拦截、`/v1/usage` 消费查询；单 Docker 起步，可选托管平台（otari.ai）。2026 年 4 月发布，7 月增速最快的新网关之一。
+- [Traceloop Hub](https://github.com/traceloop/hub) <!--s:traceloop/hub-->⭐ 231<!--/s--> — [Traceloop](https://www.traceloop.com/) 团队（OpenLLMetry / LLM 版 OTel）出品的 Rust 高并发网关，内置 OpenTelemetry 原生可观测性。
+- [Helicone](https://github.com/Helicone/helicone) <!--s:Helicone/helicone-->⭐ 6.2k<!--/s--> — 可观测优先的平台（YC W23），配套 Rust [ai-gateway](https://github.com/Helicone/ai-gateway) <!--s:Helicone/ai-gateway-->⭐ 640<!--/s-->。
 - [Plano](https://github.com/katanemo/plano) <!--s:katanemo/plano-->⭐ 7.1k<!--/s--> — 面向 Agent 的 AI 原生代理/数据面（原名 Arch Gateway / archgw）。
 - [AxonHub](https://github.com/looplj/axonhub) <!--s:looplj/axonhub-->⭐ 5.4k<!--/s--> — Go 网关：用任意 SDK 通过一个 OpenAI/Anthropic 兼容端点调用 100+ 大模型，内置故障转移、负载均衡、成本控制与端到端追踪。自带 Key 自托管。
 - [Manifest](https://github.com/mnfst/manifest) <!--s:mnfst/manifest-->⭐ 7.6k<!--/s--> — 自托管 TypeScript 路由器（MIT）：一个 OpenAI 兼容的 `/auto` 端点（外加给 Anthropic 客户端的 `/v1/messages`）接入 300+ 模型 / 31+ 厂商，可混用 API Key、本地模型（Ollama/LM Studio）与订阅号，按复杂度/请求头路由，带成本追踪、预算与故障转移。自带账号——把 OAuth 订阅号经 API 路由可能触碰厂商 ToS 风险。
@@ -342,15 +342,15 @@ _生态里被问得最多的问题之一，而网上的答案大多已过期。�
 - [Pydantic AI Gateway](https://github.com/pydantic/pydantic-ai-gateway) <!--s:pydantic/pydantic-ai-gateway-->⭐ 193<!--/s--> — BYOK 网关，带成本上限与 OTel；⚠️ 仓库已归档，现已并入 Pydantic Logfire。
 - [OptiLLM](https://github.com/algorithmicsuperintelligence/optillm) <!--s:algorithmicsuperintelligence/optillm-->⭐ 4.3k<!--/s--> — 优化型推理代理，用测试时计算技术提升准确率。
 - [aisuite](https://github.com/andrewyng/aisuite) <!--s:andrewyng/aisuite-->⭐ 16.4k<!--/s--> — 吴恩达的统一多厂商客户端。是库而非代理服务，适合不想加网络一跳的场景。
-- [Shepherd Model Gateway (SMG)](https://github.com/lightseekorg/smg) <!--s:lightseekorg/smg-->⭐ 660<!--/s--> — Rust 写的引擎无关网关：一个 OpenAI/Anthropic 兼容端点统管 vLLM/SGLang/TRT-LLM 与云厂商，带 KV 缓存感知路由与 WASM 插件。
+- [Shepherd Model Gateway (SMG)](https://github.com/lightseekorg/smg) <!--s:lightseekorg/smg-->⭐ 665<!--/s--> — Rust 写的引擎无关网关：一个 OpenAI/Anthropic 兼容端点统管 vLLM/SGLang/TRT-LLM 与云厂商，带 KV 缓存感知路由与 WASM 插件。
 - [RelayPlane](https://github.com/RelayPlane/proxy) <!--s:RelayPlane/proxy-->⭐ 209<!--/s--> — MIT、本地优先的代理（npm）：6 家厂商一个端点（Anthropic、OpenAI、Google、xAI、OpenRouter、本地 Ollama），逐请求成本归因 + 硬性日/时预算上限。
 - [SentryNode Gateway](https://github.com/nehadangwal/sentrynode-gateway) <!--s:nehadangwal/sentrynode-gateway-->⭐ 0<!--/s--> — 开放内核（Apache-2.0）的 AI 代理，主打成本治理 / FinOps 路由：自适应路由、预算上限与审计日志。早期项目，公开仓库目前为演示脚手架。
 - [GoModel](https://github.com/ENTERPILOT/GoModel) <!--s:ENTERPILOT/GoModel-->⭐ 1.3k<!--/s--> — 轻量单文件 Go 网关（开源 LiteLLM 替代品），用一个 OpenAI/Anthropic 兼容 API 打通 18+ 厂商，带缓存、护栏与用量/成本追踪；增长迅速，但其「比 LiteLLM 快」的吞吐数据为厂商自测。
-- [OpenGateLLM](https://github.com/etalab-ia/OpenGateLLM) <!--s:etalab-ia/OpenGateLLM-->⭐ 216<!--/s--> — 法国 **Etalab**（政府数字化机构）出品的生产级开源 GenAI 网关（驱动政府的「Albert」助手）：一个 OpenAI 兼容 API 打通自托管 + 厂商模型，带鉴权、限流与用量追踪。公共部门 / 欧盟数据主权角度独特。
+- [OpenGateLLM](https://github.com/etalab-ia/OpenGateLLM) <!--s:etalab-ia/OpenGateLLM-->⭐ 217<!--/s--> — 法国 **Etalab**（政府数字化机构）出品的生产级开源 GenAI 网关（驱动政府的「Albert」助手）：一个 OpenAI 兼容 API 打通自托管 + 厂商模型，带鉴权、限流与用量追踪。公共部门 / 欧盟数据主权角度独特。
 - [TokenHub](https://github.com/astaxie/TokenHub) <!--s:astaxie/TokenHub-->⭐ 1.4k<!--/s--> — 私有化企业 AI 网关（Apache-2.0），带面向普通用户、团队负责人与管理员的角色制工作区——作者 astaxie 是 beego 框架的创造者。
-- [dario](https://github.com/askalf/dario) <!--s:askalf/dario-->⭐ 576<!--/s--> — 本地 OpenAI/Anthropic 双兼容代理（MIT），把 Claude Pro/Max 订阅接入 Cursor、Cline、Aider 与 Agent SDK，带会话亲和路由、多账号池与漂移检测。⚠️ 把 OAuth 编码订阅档经 API 路由存在厂商 ToS / 封号风险（与 CLIProxyAPI 同类）。
-- [Aurora Gateway](https://github.com/aurorallm/aurora) <!--s:aurorallm/aurora-->⭐ 41<!--/s--> — Go 单二进制网关，从环境变量自动发现提供商，带提供商池、精确/语义/提示词缓存、护栏、审计日志与用量分析（Apache-2.0）。早期项目（2026 年中发布、单人维护）；其「比 LiteLLM 快」的性能数据为厂商自测。
-- [headroom](https://github.com/headroomlabs-ai/headroom) <!--s:headroomlabs-ai/headroom-->⭐ 77.4k<!--/s--> — Apache-2.0 的上下文压缩层,同时提供库、可直接接入的本地代理(`headroom proxy`)与 MCP server:在内容进入模型前,可逆地压缩工具输出、日志、文件与 RAG 片段。它不是多厂商路由——当账单是被上下文长度而非模型选择推高时用它,并与路由型网关搭配。其 15–20%(编码 agent)/ 60–95%(JSON)的省量数据为项目方自测。
+- [dario](https://github.com/askalf/dario) <!--s:askalf/dario-->⭐ 575<!--/s--> — 本地 OpenAI/Anthropic 双兼容代理（MIT），把 Claude Pro/Max 订阅接入 Cursor、Cline、Aider 与 Agent SDK，带会话亲和路由、多账号池与漂移检测。⚠️ 把 OAuth 编码订阅档经 API 路由存在厂商 ToS / 封号风险（与 CLIProxyAPI 同类）。
+- [Aurora Gateway](https://github.com/aurorallm/aurora) <!--s:aurorallm/aurora-->⭐ 40<!--/s--> — Go 单二进制网关，从环境变量自动发现提供商，带提供商池、精确/语义/提示词缓存、护栏、审计日志与用量分析（Apache-2.0）。早期项目（2026 年中发布、单人维护）；其「比 LiteLLM 快」的性能数据为厂商自测。
+- [headroom](https://github.com/headroomlabs-ai/headroom) <!--s:headroomlabs-ai/headroom-->⭐ 77.6k<!--/s--> — Apache-2.0 的上下文压缩层,同时提供库、可直接接入的本地代理(`headroom proxy`)与 MCP server:在内容进入模型前,可逆地压缩工具输出、日志、文件与 RAG 片段。它不是多厂商路由——当账单是被上下文长度而非模型选择推高时用它,并与路由型网关搭配。其 15–20%(编码 agent)/ 60–95%(JSON)的省量数据为项目方自测。
 - [OpenRelay](https://github.com/romgX/openrelay) <!--s:romgX/openrelay-->⭐ 2.3k<!--/s--> — MIT 本地代理,自动发现你已经拥有的 AI 配额(Claude Desktop/Code、Kiro、Copilot、Cursor、Windsurf、Codex、Gemini CLI),外加 45 个直连 API 或本地端点,然后让任意工具调用任意配额。自带账号,不转售配额。⚠️ 把编码订阅档经 API 路由存在厂商 ToS / 封号风险(与 CLIProxyAPI 同类)。
 - [Paritok](https://github.com/Paritok-official/paritok-4b-v1) <!--s:Paritok-official/paritok-4b-v1-->⭐ 1.5k<!--/s--> — Apache-2.0 的编码 agent 压缩网关:挡在任意 `BASE_URL` agent(Claude Code、Cursor、Codex、OpenHands)前,用一个开放权重的 4B 代码模型压缩会话上下文,让同样的窗口塞下更多轮次。与 headroom 同一细分、机制不同——用训练出的模型而非内容感知规则。早期项目(仓库 2026-07 开放);其 25%→85% 的省量曲线为厂商自测。
 - [copilot-api](https://github.com/caozhiyuan/copilot-api) <!--s:caozhiyuan/copilot-api-->⭐ 1.1k<!--/s--> — MIT 网关,把 GitHub Copilot 订阅(以及 Codex、OpenCode Go)重新暴露成 OpenAI / Anthropic 兼容 API 供任意客户端使用。⚠️ 与此处其它包装订阅的代理同样存在厂商 ToS / 封号风险。
@@ -365,7 +365,7 @@ _生态里被问得最多的问题之一，而网上的答案大多已过期。�
 - [Agnos](https://github.com/siva010928/agnos-proxy-oss) <!--s:siva010928/agnos-proxy-oss-->⭐ 4<!--/s--> — 自托管控制平面（MIT，Python/FastAPI）：把 LiteLLM、Bifrost 或 Portkey 当作可热插拔的无状态翻译引擎，统一在一个 OpenAI 兼容端点后运行；提供商密钥保存在它自己的加密保险库中、按单次请求注入，而不是留在翻译层里，并带鉴权、按工作区预算、CEL 护栏、成本统计与跨引擎的统一审计日志。早期项目（2026，单人维护）——看点是"自带控制平面、容纳网关"的架构切分，而非提供商覆盖面。
 - [Kaeso](https://github.com/logicplanes/kaeso) <!--s:logicplanes/kaeso-->⭐ 1<!--/s--> — MIT 自托管 Rust 网关，带 TypeScript 控制台，以一个 OpenAI / Anthropic 兼容端点连接用户自有厂商密钥，支持组织、虚拟 Key、限额与请求日志。早期项目、单人维护。以上为项目方文档所述，本清单未独立评测（来源核对于 2026-10-22）。
 - [App AI Gateway](https://github.com/maxceem/app-ai-gateway) <!--s:maxceem/app-ai-gateway-->⭐ 0<!--/s--> — Apache-2.0 TypeScript 网关，面向 iOS 应用运行于 Cloudflare Workers，也提供托管版本；在服务端保存厂商密钥，校验 Apple App Attest，并在转发前执行用户 / 应用预算。早期项目，目前仅支持 Apple 平台。以上为项目方文档所述，本清单未独立评测（来源核对于 2026-10-22）。
-- [cliproxy-rs](https://github.com/vayungodara/cliproxy-rs) <!--s:vayungodara/cliproxy-rs-->⭐ 43<!--/s--> — CLIProxyAPI 的 Rust 重写版，读取相同的 config.yaml 和凭证文件，提供相同的管理 API，并让 Codex CLI 用你自己的 API key 调用 DeepSeek、GLM、Kimi、OpenRouter 等仅支持 Chat Completions 的服务商；使用前请核对当前协议覆盖范围。⚠️ 可选的个人账号登录与 CLIProxyAPI 一样存在服务商条款／封号风险。（来源核对于 2026-10-22）。
+- [cliproxy-rs](https://github.com/vayungodara/cliproxy-rs) <!--s:vayungodara/cliproxy-rs-->⭐ 44<!--/s--> — CLIProxyAPI 的 Rust 重写版，读取相同的 config.yaml 和凭证文件，提供相同的管理 API，并让 Codex CLI 用你自己的 API key 调用 DeepSeek、GLM、Kimi、OpenRouter 等仅支持 Chat Completions 的服务商；使用前请核对当前协议覆盖范围。⚠️ 可选的个人账号登录与 CLIProxyAPI 一样存在服务商条款／封号风险。（来源核对于 2026-10-22）。
 - [stuntd](https://github.com/bladedevoff/stuntd) <!--s:bladedevoff/stuntd-->⭐ 73<!--/s--> — Apache-2.0 本地 Python 决策代理，支持 Chat Completions、Messages、SystemOne 与 Decisions 格式；在冻结编码器上按决策训练小头，高于配置置信度时本地回答，否则回退厂商。早期项目，学习与一致率为项目方自报，本清单未独立评测。（来源核对于 2026-10-22）。
 - [PrivAiTe](https://github.com/crp4222/PrivAiTe) <!--s:crp4222/PrivAiTe-->⭐ 54<!--/s--> - BSD-3 许可的 Python 代理：在请求离开本机前把 PII 替换为可还原的占位符（含工具调用参数与多模态文本），并在回复中还原真实值；原生支持 Claude Code 与 Codex 路由，检测全部在本地运行（Presidio + ONNX 模型），无遥测。早期项目、单人维护；召回率为项目自测，但测试工具与语料公开且可复现。（来源核对于 2026-10-22）。
 - [AISIX AI Gateway](https://github.com/api7/aisix) <!--s:api7/aisix-->⭐ 204<!--/s--> — 由 API7.ai 维护的 Apache-2.0 许可 Rust 网关，提供 OpenAI 兼容端点和 Anthropic 兼容的 Messages 端点、声明式自托管、模型路由与故障转移、护栏、Prometheus 指标及 OTLP/HTTP Trace 导出。（来源核对于 2026-10-22）。
@@ -436,11 +436,11 @@ _生态里被问得最多的问题之一，而网上的答案大多已过期。�
 - [Octopus](https://github.com/bestruirui/octopus) <!--s:bestruirui/octopus-->⭐ 2.7k<!--/s--> — 个人向 LLM API 聚合网关，把多家供应商收口到一个端点，带负载均衡与 OpenAI/Anthropic 协议转换（Go 后端 + Next.js 前端）。
 - [Veloera](https://github.com/Veloera/Veloera) <!--s:Veloera/Veloera-->⭐ 1.6k<!--/s--> — one-api/new-api 系新晋中转平台。
 - [uni-api](https://github.com/yym68686/uni-api) <!--s:yym68686/uni-api-->⭐ 1.3k<!--/s--> — 轻量级单配置文件统一 API 管理，无前端。
-- [CrossLink](https://github.com/HotRiceNoodles/CrossLink) <!--s:HotRiceNoodles/CrossLink-->⭐ 481<!--/s--> — 统一大模型代理网关（Apache-2.0），带负载均衡、故障转移、限流、预算管理、内容审计、缓存与 MCP 网关能力。
+- [CrossLink](https://github.com/HotRiceNoodles/CrossLink) <!--s:HotRiceNoodles/CrossLink-->⭐ 485<!--/s--> — 统一大模型代理网关（Apache-2.0），带负载均衡、故障转移、限流、预算管理、内容审计、缓存与 MCP 网关能力。
 - [APIPark](https://github.com/APIParkLab/APIPark) <!--s:APIParkLab/APIPark-->⭐ 1.8k<!--/s--> — 国产云原生 AI & API 网关，带开放开发者门户。
 - [VoAPI](https://github.com/VoAPI/VoAPI) <!--s:VoAPI/VoAPI-->⭐ 1.1k<!--/s--> — new-api 系的精致中转/计费面板（Go），偏重 UI 与运营。
 - [done-hub](https://github.com/deanxv/done-hub) <!--s:deanxv/done-hub-->⭐ 810<!--/s--> — one-api/new-api 分支，计费与渠道管理更丰富。
-- [sub2api](https://github.com/Wei-Shaw/sub2api) <!--s:Wei-Shaw/sub2api-->⭐ 44.6k<!--/s--> — Go 中转平台，把 Claude/OpenAI/Gemini/Antigravity 的订阅账号（OAuth、session key、API key）汇聚到一个 OpenAI/Anthropic 兼容端点，并加上「拼车」分摊计费（Stripe/支付宝/微信）、key 分发与按 token 限流。2026 年增长最快的国内生态中转之一——但账号拼池与本清单排除的「转售中转」类别相邻；请自带账号并先行验证。
+- [sub2api](https://github.com/Wei-Shaw/sub2api) <!--s:Wei-Shaw/sub2api-->⭐ 44.7k<!--/s--> — Go 中转平台，把 Claude/OpenAI/Gemini/Antigravity 的订阅账号（OAuth、session key、API key）汇聚到一个 OpenAI/Anthropic 兼容端点，并加上「拼车」分摊计费（Stripe/支付宝/微信）、key 分发与按 token 限流。2026 年增长最快的国内生态中转之一——但账号拼池与本清单排除的「转售中转」类别相邻；请自带账号并先行验证。
 - [AIHelms](https://github.com/beizhu-1209/AIHelms) <!--s:beizhu-1209/AIHelms-->⭐ 1k<!--/s--> — GPL-3.0 的企业级 AI 资源纳管平台（FastAPI + Vue3）:统一网关纳管 OpenAI/Azure/Claude/DeepSeek，带 Token 调度、内外双轨定价、成本归因、统一身份认证、安全审计与 MCP 工具/Skill 集中分发。偏治理而非偏吞吐——比起上面的中转面板，它更接近企业合规那一档。
 - [Bella OpenAPI](https://github.com/LianjiaTech/bella-openapi) <!--s:LianjiaTech/bella-openapi-->⭐ 240<!--/s--> — 链家/贝壳出品的 MIT 网关，能力不止对话补全:文本向量化、语音识别、语音合成与文生图/图生图统一在一个 API 后面，并集成计费、限流与资源管理。其差异点是来路——这些能力出自一家大型企业自己的生产技术栈。
 - [AI Proxy](https://github.com/labring/aiproxy) <!--s:labring/aiproxy-->⭐ 564<!--/s--> — Sealos 团队出品的自托管 Go 网关，接受 OpenAI/Claude/Gemini 协议并互转，加上多渠道路由、负载均衡、限流、多租户隔离，以及缓存/联网搜索/推理的插件层。
@@ -466,8 +466,8 @@ _生态里被问得最多的问题之一，而网上的答案大多已过期。�
 - [Docker MCP Gateway](https://github.com/docker/mcp-gateway) <!--s:docker/mcp-gateway-->⭐ 1.6k<!--/s--> — Docker 官方维护的 `docker mcp` CLI 插件：把 MCP server 以容器方式运行并聚合到一个端点之后，带密钥管理、调用拦截与按工具的访问控制。
 - [MetaMCP](https://github.com/metatool-ai/metamcp) <!--s:metatool-ai/metamcp-->⭐ 2.7k<!--/s--> — 把多个 MCP server 聚合成一个端点，带中间件（鉴权、过滤）与管理界面。
 - [ToolHive](https://github.com/stacklok/toolhive) <!--s:stacklok/toolhive-->⭐ 2.3k<!--/s--> — Go 平台，把多个 MCP server 跑在隔离容器里，并以统一、加固的网关收口（访问策略、"虚拟 MCP"聚合）。
-- [Microsoft MCP Gateway](https://github.com/microsoft/mcp-gateway) <!--s:microsoft/mcp-gateway-->⭐ 890<!--/s--> — 微软维护的 MCP 反向代理 + 管理层：会话感知的有状态路由与生命周期管理，运行在 Kubernetes 上。
-- [1MCP](https://github.com/1mcp-app/agent) <!--s:1mcp-app/agent-->⭐ 522<!--/s--> — 统一 MCP server（TypeScript），把多个 MCP server 聚合到一个端点，带 HTTP 访问与面向 Agent 的 CLI 发现。
+- [Microsoft MCP Gateway](https://github.com/microsoft/mcp-gateway) <!--s:microsoft/mcp-gateway-->⭐ 893<!--/s--> — 微软维护的 MCP 反向代理 + 管理层：会话感知的有状态路由与生命周期管理，运行在 Kubernetes 上。
+- [1MCP](https://github.com/1mcp-app/agent) <!--s:1mcp-app/agent-->⭐ 523<!--/s--> — 统一 MCP server（TypeScript），把多个 MCP server 聚合到一个端点，带 HTTP 访问与面向 Agent 的 CLI 发现。
 - [mcpproxy-go](https://github.com/smart-mcp-proxy/mcpproxy-go) <!--s:smart-mcp-proxy/mcpproxy-go-->⭐ 398<!--/s--> — 本地 Go MCP 代理，把多个 MCP server 聚合到一个端点，带 BM25 工具检索过滤、token 压缩，以及对新接入 server 的自动隔离/安全扫描。
 - [MCPJungle](https://github.com/mcpjungle/MCPJungle) <!--s:mcpjungle/MCPJungle-->⭐ 1.3k<!--/s--> — 自托管 MCP 注册中心 + 网关，面向企业的工具集中治理。
 - [Obot](https://github.com/obot-platform/obot) <!--s:obot-platform/obot-->⭐ 1.1k<!--/s--> — 开源 Agent 平台，自带 MCP 网关管控工具访问。
@@ -482,7 +482,7 @@ _生态里被问得最多的问题之一，而网上的答案大多已过期。�
 - [Nexus (Grafbase)](https://github.com/Nexus-Router/nexus) <!--s:Nexus-Router/nexus-->⭐ 436<!--/s--> — Grafbase 出品的 Rust AI 路由器，把 MCP server（STDIO/SSE/HTTP）与 LLM 厂商聚合到一个端点之后，带上下文感知的模糊工具搜索、OAuth2/TLS 安全、限流与 OpenTelemetry。
 - [Pomerium](https://github.com/pomerium/pomerium) <!--s:pomerium/pomerium-->⭐ 5.1k<!--/s--> — 身份感知访问代理，新增 MCP 支持：在 MCP server 前做基于策略的鉴权。
 - [Open Connector](https://github.com/oomol-lab/open-connector) <!--s:oomol-lab/open-connector-->⭐ 6.1k<!--/s--> — 开源鉴权网关（Apache-2.0，OOMOL Lab），通过 SDK、CLI、MCP、HTTP 与 OpenAPI 把 AI Agent 接到 1000+ SaaS 服务——治理的是 Agent→SaaS 的工具凭证与访问，而非 LLM 补全流量。
-- [toolport](https://github.com/tsouth89/toolport) <!--s:tsouth89/toolport-->⭐ 235<!--/s--> — 本地优先的 MCP 网关（MIT）：一个端口收口所有工具与 AI 客户端，带懒加载工具发现（按其文档约省 90% token）、工具完整性校验 + 隔离，密钥存放在系统钥匙串。
+- [toolport](https://github.com/tsouth89/toolport) <!--s:tsouth89/toolport-->⭐ 236<!--/s--> — 本地优先的 MCP 网关（MIT）：一个端口收口所有工具与 AI 客户端，带懒加载工具发现（按其文档约省 90% token）、工具完整性校验 + 隔离，密钥存放在系统钥匙串。
 - [Speakeasy MCP Gateway](https://www.speakeasy.com/product/mcp-gateway) — 来自 OpenAPI 工具链厂商的托管 MCP 网关，定位是"AI 控制平面"里的分发层:通过你现有的 IdP 代理 OAuth 2.1，权限**按服务、按工具、按团队**分级，每次工具调用都过策略，未经批准的影子 MCP 服务默认拦截。把它放进正文而非长尾的理由是它公开的 MoonPay 案例:200+ 个 MCP 服务经 Okta 收口到一个网关，安全团队可见 60K+ 次 Agent 会话。有免费档，之上为商业版。
 - [Aident Loadout](https://aident.ai) — 托管 MCP 端点与 CLI，为 Agent 代理访问已连接应用，提供账户连接、凭据库管理与审计记录。托管服务闭源，客户端 skill 为 MIT。以上为项目方文档所述，本清单未独立评测（[MCP 接入指南](https://docs.aident.ai/loadout/mcp)，核对于 2026-10-22）。
 - [Omega MCP Router](https://github.com/Omega-JS-Stack/omega/tree/main/packages/mcp-router) <!--s:Omega-JS-Stack/omega-->⭐ 2<!--/s--> - 本地 stdio MCP 路由器(Node)，用一个连接代理多个上游 MCP 服务器:工具 schema 从磁盘缓存加载，每个上游进程只在第一次需要它的调用时启动，空闲 15 分钟后关闭，会话可通过 `router__*` 元工具开关上游。 以上为项目方文档所述，本清单未独立评测。（来源核对于 2026-10-22）。
@@ -553,13 +553,13 @@ Anthropic 系： usage.cache_read_input_tokens               第二次 > 0 吗�
 - [Helicone](https://github.com/Helicone/helicone) <!--s:Helicone/helicone-->⭐ 6.2k<!--/s--> — 日志、成本、会话、Prompt 实验；一行代码接入。
 - [TensorZero](https://github.com/tensorzero/tensorzero) <!--s:tensorzero/tensorzero-->⭐ 11.7k<!--/s--> — ⚠️ **2026 年 6 月已归档**（仓库只读，Apache-2.0 代码与社区分支尚存）。网关+可观测+评测一体（Rust），数据留在你自己的 ClickHouse。
 - [Portkey](https://portkey.ai) — 基于其开源网关的完整 LLMOps：链路追踪、预算、Prompt 管理。
-- [vLLora（原 LangDB）](https://github.com/vllora/vllora) <!--s:vllora/vllora-->⭐ 811<!--/s--> — LangDB 团队的 Agent 调试与可观测工具。
+- [vLLora（原 LangDB）](https://github.com/vllora/vllora) <!--s:vllora/vllora-->⭐ 810<!--/s--> — LangDB 团队的 Agent 调试与可观测工具。
 - [Braintrust Proxy](https://github.com/braintrustdata/braintrust-proxy) <!--s:braintrustdata/braintrust-proxy-->⭐ 412<!--/s--> — 带缓存的代理，与 Braintrust 评测打通。
 - [MLflow AI Gateway](https://github.com/mlflow/mlflow) <!--s:mlflow/mlflow-->⭐ 28.5k<!--/s--> — MLflow 平台内的统一端点与治理组件。
 - [Respan](https://www.respan.ai/ai-gateway)（原 Keywords AI）— 一个端点接入 250+ 模型，带路由/兜底/缓存，外加内置可观测与 evals。
 - [claude-tap](https://github.com/liaohch3/claude-tap) <!--s:liaohch3/claude-tap-->⭐ 3.3k<!--/s--> — MIT 的本地拦截代理 + 链路查看器,覆盖编码 Agent 流量（Claude Code、Codex CLI、Gemini CLI、Cursor CLI、OpenCode、Kimi、Pi、Hermes）:看清 agent 实际发出的请求、响应与工具调用。比 ccglass 覆盖的 agent 更广,定位偏排障而非记账。
-- [ccglass](https://github.com/jianshuo/ccglass) <!--s:jianshuo/ccglass-->⭐ 842<!--/s--> — 本地代理 + Web 仪表盘（MIT），让你看清编码 Agent（Claude Code、Codex、Kimi）到底发了什么给模型。
-- [OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) <!--s:Continuum-AI-Corp/OrcaReplay-->⭐ 280<!--/s--> — Apache-2.0 本地代理，逐字节保存原始请求与响应，因此和上面两个"查看器"不同,它能**把录制回放出去**:同一次 Agent 运行可以重新执行而不调用任何厂商、不花一分钱,也可以从任意检查点分叉到别的模型上继续,以校验命令的退出码作为判定。对本节那个痛点——"质量为什么下降了"——它的回答方式是把同一份活重跑一遍,而不是事后画图。其 README 自己标注的边界:`egress=blocked` 只拦模型厂商出口,录制到的工具调用仍会真实执行,所以它不是沙箱。
+- [ccglass](https://github.com/jianshuo/ccglass) <!--s:jianshuo/ccglass-->⭐ 844<!--/s--> — 本地代理 + Web 仪表盘（MIT），让你看清编码 Agent（Claude Code、Codex、Kimi）到底发了什么给模型。
+- [OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) <!--s:Continuum-AI-Corp/OrcaReplay-->⭐ 281<!--/s--> — Apache-2.0 本地代理，逐字节保存原始请求与响应，因此和上面两个"查看器"不同,它能**把录制回放出去**:同一次 Agent 运行可以重新执行而不调用任何厂商、不花一分钱,也可以从任意检查点分叉到别的模型上继续,以校验命令的退出码作为判定。对本节那个痛点——"质量为什么下降了"——它的回答方式是把同一份活重跑一遍,而不是事后画图。其 README 自己标注的边界:`egress=blocked` 只拦模型厂商出口,录制到的工具调用仍会真实执行,所以它不是沙箱。
 - [Spendline](https://www.spendline.ai) — 托管 BYOK 代理，按客户与工作流归集模型费用，在上游调用前检查预算并提供账单核对。公开接入指南要求修改客户端地址并添加归属请求头。**厂商提交，未经评测**；首页示例为样例数据。（[来源](https://www.spendline.ai/integrate.md)，核对于 2026-10-22）。
 - [Vessel](https://github.com/spenceclark/Vessel) <!--s:spenceclark/Vessel-->⭐ 8<!--/s--> - MIT 许可的本地反向代理（单个 C#/.NET 可执行文件），逐字节转发 Ollama、OpenAI 兼容和 Anthropic 流量，并将每个请求和响应存入本地 SQLite，支持搜索、跨模型重放和并排对比。 以上为项目方文档所述，本清单未独立评测。（来源核对于 2026-10-22）。
 - [ABTO](https://abto.app/en/) — 托管的 OpenAI 兼容网关（OpenAI、Anthropic、Gemini、DeepSeek、Kimi），按设备 ID 把终端用户固定分配到不同的模型/Prompt 选项，并按功能将每次调用成本与下游产品事件（注册、付费、留存）对照展示；厂商 API Key 随请求透传，不写入调用日志。 以上为项目方文档所述，本清单未独立评测。（来源核对于 2026-10-22）。
@@ -569,12 +569,12 @@ Anthropic 系： usage.cache_read_input_tokens               第二次 > 0 吗�
 
 *痛点："集群内路由到自托管模型（vLLM/Ollama），还要懂 GPU。"*
 
-- [Gateway API Inference Extension](https://github.com/kubernetes-sigs/gateway-api-inference-extension) <!--s:kubernetes-sigs/gateway-api-inference-extension-->⭐ 792<!--/s--> — Kubernetes 推理感知路由标准。
+- [Gateway API Inference Extension](https://github.com/kubernetes-sigs/gateway-api-inference-extension) <!--s:kubernetes-sigs/gateway-api-inference-extension-->⭐ 793<!--/s--> — Kubernetes 推理感知路由标准。
 - [AIBrix](https://github.com/vllm-project/aibrix) <!--s:vllm-project/aibrix-->⭐ 5.2k<!--/s--> — vLLM on K8s 的低成本控制面（字节跳动发起）。
-- [llm-d](https://github.com/llm-d/llm-d) <!--s:llm-d/llm-d-->⭐ 4.9k<!--/s--> — K8s 原生分布式推理服务（红帽/谷歌/IBM 背书）。
+- [llm-d](https://github.com/llm-d/llm-d) <!--s:llm-d/llm-d-->⭐ 5k<!--/s--> — K8s 原生分布式推理服务（红帽/谷歌/IBM 背书）。
 - [Higress](https://github.com/higress-group/higress) <!--s:higress-group/higress-->⭐ 9.6k<!--/s--> / [Kong](https://github.com/Kong/kong) <!--s:Kong/kong-->⭐ 44.3k<!--/s--> / [Envoy AI Gateway](https://github.com/envoyproxy/ai-gateway) <!--s:envoyproxy/ai-gateway-->⭐ 2.3k<!--/s--> — 均已实现 inference-extension 式路由。
 - [Traefik Hub AI Gateway](https://traefik.io) — Traefik 商业运行时内的 LLM 路由/安全。
-- [Inference Gateway](https://github.com/inference-gateway/inference-gateway) <!--s:inference-gateway/inference-gateway-->⭐ 217<!--/s--> — 统一云端 + 本地（Ollama）模型的小型云原生网关。
+- [Inference Gateway](https://github.com/inference-gateway/inference-gateway) <!--s:inference-gateway/inference-gateway-->⭐ 215<!--/s--> — 统一云端 + 本地（Ollama）模型的小型云原生网关。
 - [Olla](https://github.com/thushan/olla) <!--s:thushan/olla-->⭐ 320<!--/s--> — 轻量级 Go 代理与负载均衡，在多个推理后端（Ollama、vLLM、LM Studio、OpenAI 兼容）间做智能路由与自动兜底。
 - [KServe](https://github.com/kserve/kserve) <!--s:kserve/kserve-->⭐ 6.1k<!--/s--> — K8s 上的标准模型推理平台；LLM 服务带推理网关 / OpenAI 兼容运行时。
 - [GPUStack](https://github.com/gpustack/gpustack) <!--s:gpustack/gpustack-->⭐ 5.9k<!--/s--> — 管理 GPU 集群并把 LLM 服务收口到一个 OpenAI 兼容端点。
@@ -592,12 +592,12 @@ Anthropic 系： usage.cache_read_input_tokens               第二次 > 0 吗�
 
 | 项目                                                                     | 类型                    | 星数                                             | 协议         | 多厂商                         | 故障转移/负载均衡 | 缓存           | 护栏    | 成本核算   | Web 管理界面       | 本地模型（Ollama） |
 | ---------------------------------------------------------------------- | --------------------- | ---------------------------------------------- | ---------- | --------------------------- | --------- | ------------ | ----- | ------ | -------------- | ------------ |
-| [LiteLLM](https://github.com/BerriAI/litellm)                          | 开源代理 + SDK            | <!--s:BerriAI/litellm-->⭐ 61.8k<!--/s-->       | MIT¹       | ✅ 100+                      | ✅         | ✅            | ✅     | ✅      | ✅ 需数据库         | ✅            |
+| [LiteLLM](https://github.com/BerriAI/litellm)                          | 开源代理 + SDK            | <!--s:BerriAI/litellm-->⭐ 61.9k<!--/s-->       | MIT¹       | ✅ 100+                      | ✅         | ✅            | ✅     | ✅      | ✅ 需数据库         | ✅            |
 | [new-api](https://github.com/QuantumNous/new-api)                      | 开源中转/计费               | <!--s:QuantumNous/new-api-->⭐ 50.5k<!--/s-->   | AGPL-3.0   | ✅                           | ✅         | ➕            | ➕     | ✅      | ✅              | 未注明          |
 | [one-api](https://github.com/songquanpeng/one-api)                     | 开源中转/计费               | <!--s:songquanpeng/one-api-->⭐ 37.2k<!--/s-->  | MIT        | ✅                           | ✅         | ❌            | ❌     | ✅      | ✅              | ✅            |
 | [Kong AI Gateway](https://github.com/Kong/kong)                        | 开源 API 网关             | <!--s:Kong/kong-->⭐ 44.3k<!--/s-->             | Apache-2.0 | ✅                           | ✅         | 💰 语义缓存（企业版） | ✅     | ✅      | ✅ Kong Manager | ✅            |
 | [Apache APISIX](https://github.com/apache/apisix)                      | 开源 API 网关             | <!--s:apache/apisix-->⭐ 17.2k<!--/s-->         | Apache-2.0 | ✅                           | ✅         | ➕            | ➕     | ➕      | ➕ 独立 Dashboard | ➕ OpenAI 兼容  |
-| [Portkey Gateway](https://github.com/Portkey-AI/gateway)               | 开源网关 + SaaS           | <!--s:Portkey-AI/gateway-->⭐ 13.2k<!--/s-->    | MIT        | ✅ 1600+                     | ✅         | ✅            | ✅ 50+ | ➕ SaaS | ✅ 日志控制台        | ✅            |
+| [Portkey Gateway](https://github.com/Portkey-AI/gateway)               | 开源网关 + SaaS           | <!--s:Portkey-AI/gateway-->⭐ 13.3k<!--/s-->    | MIT        | ✅ 1600+                     | ✅         | ✅            | ✅ 50+ | ➕ SaaS | ✅ 日志控制台        | ✅            |
 | [TensorZero](https://github.com/tensorzero/tensorzero)                 | 开源 LLMOps · ⚠️ 已归档'26 | <!--s:tensorzero/tensorzero-->⭐ 11.7k<!--/s--> | Apache-2.0 | ✅                           | ✅         | ✅            | ➕     | ✅      | ✅              | ✅ OpenAI 兼容  |
 | [Higress](https://github.com/higress-group/higress)                    | 开源 AI 原生网关            | <!--s:higress-group/higress-->⭐ 9.6k<!--/s-->  | Apache-2.0 | ✅                           | ✅         | ✅            | ✅     | ✅      | ✅ 控制台          | ✅            |
 | [GPT-Load](https://github.com/tbphp/gpt-load)                          | 开源密钥池代理               | <!--s:tbphp/gpt-load-->⭐ 7.2k<!--/s-->         | MIT        | ✅                           | ✅ 密钥轮询    | ❌            | ❌     | ➕      | ✅              | 未注明          |
@@ -661,7 +661,7 @@ Anthropic 系： usage.cache_read_input_tokens               第二次 > 0 吗�
 6. **先做"毛利下限检查"——30 秒，而且它是预测性最强的单一指标。** 用中转的每 token 价格除以厂商同款模型的官网挂牌价。转售方拿货价接近挂牌价、还要留毛利，所以这个比值直接告诉你面对的是什么：**0.85–1.0** 是正常转售毛利，不需要解释；**0.5–0.85** 该要一个解释；**低于约 0.3 通常不存在诚实的解释**——前沿模型 API 的任何量级协议都折不到这个价。跌破下限，说明钱来自价目表没写的地方：被滥用的试用额度、被盗的账号、订阅套餐套利，或者就是你没点的那个更便宜的模型。关键在于，**合规**的低价总会附带一个明说的机制，本列表里就有现成的样子：自己托管开源权重而不转售（Gonka Broker），或者把补贴和补贴的理由讲清楚（TierUp 公开自述的 PMF 前补贴定价）。**没有机制说明 + 价格跌破下限 + 未披露运营主体 = 直接放弃，文档做得多漂亮都一样。** 这正是我们审提交时用的那把尺子，你自己量一遍会得到和我们一样的结论。
 7. **远离灰产中转**（逆向接口、盗刷额度转售）。除封号风险外，2026 年研究还抓到中转投放被投毒的模型、窃取预埋密钥（[*Your Agent Is Mine*](https://arxiv.org/abs/2604.08407)）——而且最显眼的中转"榜单"往往是付费稿或带返利链接。封号和数据泄露的风险在你，不在它。**抓到哪家在换模型、收数据、或卷款跑路？[带证据来举报](https://github.com/cuihuan/awesome-ai-gateway/issues/new?template=report-relay.yml)——我们一起把社区避雷板建起来。**
 8. **当心 2026 年的新钓法："无限量"套餐暗中限速。** 套路话术已经升级——从假中转变成_官方但便宜的订阅套餐_，被悄悄限速到没法用："实际上确实无限量，因为慢到你根本花不完额度……按量付费的 API 比订阅快几个数量级"（[r/ClaudeCode 谈 Z.ai GLM 编码套餐](https://www.reddit.com/r/ClaudeCode/comments/1qijtjx/)，[另一帖](https://www.reddit.com/r/ClaudeCode/comments/1q3sssl/)印证）。买任何包月套餐前：拿它的_吞吐_对比同厂商按量付费 API——差 10 倍速度就是信号。
-9. **把网关本身当作供应链来审。** 它看得到你的每条 prompt、拿着你所有厂商密钥，所以它自己的安全水位就是选型标准：**2026 年 3 月** LiteLLM 的 PyPI 发布 v1.82.7/.8 因 CI token 失窃被植入后门（约 3 小时下架）；**2026 年 6 月** 一条 LiteLLM RCE 利用链（[CVE-2026-42271](https://labs.cloudsecurityalliance.org/research/csa-research-note-litellm-cve-2026-42271-ai-gateway-exploita/)）进入 CISA KEV 名录——一个季度内、在部署量最大的开源网关上，出现两种完全不同的失效模式。**而 2026 年 8 月微软把同一条 CVE 串联对应到了一次真实的在攻活动**——目标是 AI 网关这一整类系统（LiteLLM、一个 RAGFlow 部署、Kestra），目的是窃取厂商凭据、驻留、转卖算力——所以这已经是观测到的攻击模式，不是假设。实操卫生：**锁定精确版本**（别用 `latest`）、盯项目安全公告 + KEV、控制面快速打补丁、管理后台不暴露公网，接第三方中转前先用 [api-relay-audit](https://github.com/toby-bridges/api-relay-audit) <!--s:toby-bridges/api-relay-audit-->⭐ 887<!--/s--> 这类审计工具过一遍（检查 prompt 注入、模型偷换、工具调用改写、SSE 异常）。逐网关的姿态——谁给发布签名、谁发 SBOM、谁真被打穿过——见下方[供应链矩阵](#-供应链安全谁给发布签名谁真被打穿过)。
+9. **把网关本身当作供应链来审。** 它看得到你的每条 prompt、拿着你所有厂商密钥，所以它自己的安全水位就是选型标准：**2026 年 3 月** LiteLLM 的 PyPI 发布 v1.82.7/.8 因 CI token 失窃被植入后门（约 3 小时下架）；**2026 年 6 月** 一条 LiteLLM RCE 利用链（[CVE-2026-42271](https://labs.cloudsecurityalliance.org/research/csa-research-note-litellm-cve-2026-42271-ai-gateway-exploita/)）进入 CISA KEV 名录——一个季度内、在部署量最大的开源网关上，出现两种完全不同的失效模式。**而 2026 年 8 月微软把同一条 CVE 串联对应到了一次真实的在攻活动**——目标是 AI 网关这一整类系统（LiteLLM、一个 RAGFlow 部署、Kestra），目的是窃取厂商凭据、驻留、转卖算力——所以这已经是观测到的攻击模式，不是假设。实操卫生：**锁定精确版本**（别用 `latest`）、盯项目安全公告 + KEV、控制面快速打补丁、管理后台不暴露公网，接第三方中转前先用 [api-relay-audit](https://github.com/toby-bridges/api-relay-audit) <!--s:toby-bridges/api-relay-audit-->⭐ 890<!--/s--> 这类审计工具过一遍（检查 prompt 注入、模型偷换、工具调用改写、SSE 异常）。逐网关的姿态——谁给发布签名、谁发 SBOM、谁真被打穿过——见下方[供应链矩阵](#-供应链安全谁给发布签名谁真被打穿过)。
 
 ### 🔒 谁看得到你的 prompt？—— 数据留存矩阵
 
@@ -848,18 +848,18 @@ _第一大信任问题，而全网没有一份中立的跨厂商答案。这里�
 ## 🚀 最新版本发布（自动更新）
 
 <!-- RELEASES:START -->
-- 2026-10-22 · [labring/aiproxy v0.7.6](https://github.com/labring/aiproxy/releases/tag/v0.7.6) — Version 0.7.6
-- 2026-10-22 · [askalf/dario v6.13.28](https://github.com/askalf/dario/releases/tag/v6.13.28) — v6.13.28
-- 2026-10-21 · [archestra-ai/archestra platform-v1.4.1](https://github.com/archestra-ai/archestra/releases/tag/platform-v1.4.1) — platform: v1.4.1
-- 2026-10-21 · [QuantumNous/new-api v1.0.0-rc.46](https://github.com/QuantumNous/new-api/releases/tag/v1.0.0-rc.46) — v1.0.0-rc.46
-- 2026-10-21 · [krakend/krakend-ce v3.0.2](https://github.com/krakend/krakend-ce/releases/tag/v3.0.2) — v3.0.2
-- 2026-10-21 · [router-for-me/CLIProxyAPI v8.0.38](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.38) — v8.0.38
-- 2026-10-21 · [caozhiyuan/copilot-api v2.7.32](https://github.com/caozhiyuan/copilot-api/releases/tag/v2.7.32) — v2.7.32
-- 2026-10-21 · [mozilla-ai/otari v0.31.1](https://github.com/mozilla-ai/otari/releases/tag/v0.31.1) — v0.31.1
-- 2026-10-21 · [lidge-jun/opencodex v2.90.0](https://github.com/lidge-jun/opencodex/releases/tag/v2.90.0) — v2.90.0
-- 2026-10-21 · [tashfeenahmed/freellmapi v0.16.7](https://github.com/tashfeenahmed/freellmapi/releases/tag/v0.16.7) — v0.16.7
-- 2026-10-21 · [NadirRouter/NadirClaw v0.25.1](https://github.com/NadirRouter/NadirClaw/releases/tag/v0.25.1) — v0.25.1
-- 2026-10-21 · [BerriAI/litellm v1.106.2](https://github.com/BerriAI/litellm/releases/tag/v1.106.2) — v1.106.2
+- 2026-10-23 · [vayungodara/cliproxy-rs v0.3.0](https://github.com/vayungodara/cliproxy-rs/releases/tag/v0.3.0) — v0.3.0
+- 2026-10-23 · [logicplanes/kaeso v0.3.9](https://github.com/logicplanes/kaeso/releases/tag/v0.3.9) — Kaeso 0.3.9
+- 2026-10-23 · [oomol-lab/open-connector v1.9.2](https://github.com/oomol-lab/open-connector/releases/tag/v1.9.2) — v1.9.2
+- 2026-10-23 · [agentic-community/mcp-gateway-registry 1.34.0](https://github.com/agentic-community/mcp-gateway-registry/releases/tag/1.34.0) — 1.34.0 - LiteLLM Removal, Entra Group Recovery, Embeddings Hardening, and a T...
+- 2026-10-23 · [archestra-ai/archestra platform-v1.4.2](https://github.com/archestra-ai/archestra/releases/tag/platform-v1.4.2) — platform: v1.4.2
+- 2026-10-23 · [bestruirui/octopus v0.13.13](https://github.com/bestruirui/octopus/releases/tag/v0.13.13) — v0.13.13
+- 2026-10-23 · [askalf/dario v6.13.30](https://github.com/askalf/dario/releases/tag/v6.13.30) — v6.13.30
+- 2026-10-23 · [router-for-me/CLIProxyAPI v8.0.40](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.40) — v8.0.40
+- 2026-10-22 · [ai-dynamo/dynamo v1.6.0](https://github.com/ai-dynamo/dynamo/releases/tag/v1.6.0) — Dynamo v1.6.0
+- 2026-10-22 · [BlockRunAI/ClawRouter v0.12.298](https://github.com/BlockRunAI/ClawRouter/releases/tag/v0.12.298) — v0.12.298 — clawrouter update — one command updates both copies
+- 2026-10-22 · [lidge-jun/opencodex v2.91.0](https://github.com/lidge-jun/opencodex/releases/tag/v2.91.0) — v2.91.0
+- 2026-10-22 · [caozhiyuan/copilot-api v2.7.35](https://github.com/caozhiyuan/copilot-api/releases/tag/v2.7.35) — v2.7.35
 <!-- RELEASES:END -->
 
 ## 📚 必读精选
